@@ -14,7 +14,7 @@ model = YOLO(model_path, task='detect')  # Load the YOLO model
 labels = model.names  # Get labels for YOLO classes
 
 # Initialize video capture (webcam)
-cap = cv2.VideoCapture(0)  # Use 0 for default webcam (you can change this if you have a different camera source)
+cap = cv2.VideoCapture(1)  # Use 0 for default webcam (you can change this if you have a different camera source)
 
 # Define frame size (optional, can be set to your desired resolution)
 frame_width = 640
